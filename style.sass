@@ -24,6 +24,7 @@ a
   color: #42b3e5
   line-height: 140%
   place-self: center
+  text-align: center
 
 .h4
   margin-bottom: 0
@@ -36,6 +37,12 @@ a
 
 .header
   padding-top: 10px
+  &__switcher
+    display: none
+  &__open
+    display: none
+  &__close
+    display: none
 
 .logo__img
   height: 90px
@@ -54,6 +61,7 @@ a
     align-items: center
     text-transform: uppercase
   &__link
+    display: inline-block
     line-height: 80px
     padding: 0 10px
     font-size: 22px
@@ -62,6 +70,7 @@ a
     cursor: pointer
     &:hover
       color: #42b3e5
+      text-decoration: none
 
 .carousel
 
@@ -215,8 +224,14 @@ a
     min-width: 320px
     grid-column: span 2
     padding-right: 20px
+    padding-left: 20px
 
-.footer__menu
+.header__open_bottom
+  display: none
+
+
+
+@import "sass/media"
 
 
 
